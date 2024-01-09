@@ -6,9 +6,9 @@ import StaticPart from "./static-part";
 function App() {
   return (
     <>
-      <SelectFlavor />
-      <StaticPart />
       <DynamicPart />
+      <StaticPart />
+      <SelectFlavor />
     </>
   );
 }

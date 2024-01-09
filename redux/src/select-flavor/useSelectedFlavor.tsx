@@ -9,8 +9,8 @@ function useSelectedFlavor() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const subscription = watch(({ gender }) =>
-      dispatch(setFlavor(gender.label))
+    const subscription = watch(({ flavor }) =>
+      dispatch(setFlavor(flavor.label))
     );
     return () => subscription.unsubscribe();
   }, [watch]);
